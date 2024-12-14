@@ -1,7 +1,7 @@
 //SPIN SECTION
 const spinBtn = document.getElementById('spin-button');
 const spinItems = document.querySelectorAll('.spin-item');
-const spinImg = ['/bau.png','/ca.png', '/cua.png', '/ga.png', '/huou.png', '/tom.png']
+const spinImg = ['bau.png','ca.png', 'cua.png', 'ga.png', 'huou.png', 'tom.png']
 
 let finalResult = [];
 
