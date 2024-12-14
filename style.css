@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7rem;
+}
+.spin,
+.select {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.spin-item-container,
+.select-item-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.spin-item,
+.select-item {
+  width: 7rem;
+  height: 7rem;
+  background-color: white;
+  border: 1px solid black;
+}
+.spin-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.spin-item img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: contain;
+  object-position: center;
+}
+.select-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.select-item:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: transform 0.5s ease-in-out;
+}
+.select-item img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: contain;
+  object-position: center;
+}
+.select-item-number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.5rem;
+  font-size: large;
+}
+button {
+  position: absolute;
+  right: 0;
+  bottom: -60%;
+  padding: 1rem;
+  background-color: yellowgreen;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
